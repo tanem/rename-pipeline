@@ -14,6 +14,8 @@ Examples:
 
 Options:
   -t, --transform  Apply a transform to the file [required]
+  -d, --dryrun     Print the result of the rename transforms to stdout, without
+                   actually renaming the files
   -h, --help       Show this message
 
 Passing arguments to transforms:
@@ -103,10 +105,3 @@ Run the transform pipeline, executing the optional done callback when complete.
 ```
 $ npm test
 ```
-
-
-
-
-
-
-
