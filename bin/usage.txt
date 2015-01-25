@@ -1,0 +1,20 @@
+Usage: rename-pipeline [source files] {OPTIONS}
+
+Examples:
+  rename-pipeline ./src/*.js -t contenthash
+  rename-pipeline ./src/**/*.jpg -t gitshorthash -t [ cssimgrename -s ./src/**/*.css ]
+
+Options:
+  -t, --transform  Apply a transform to the file [required]
+  -h, --help       Show this message
+
+Passing arguments to transforms:
+
+  For -t, you can use subarg syntax to pass options to the
+  transforms as the second parameter. For example:
+
+    -t [ foo -x 3 -y ]
+
+  will call the `foo` transform with the following options:
+
+    { x: 3, y: true }

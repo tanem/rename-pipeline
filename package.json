@@ -1,0 +1,42 @@
+{
+  "name": "rename-pipeline",
+  "version": "1.0.0",
+  "description": "Apply transforms to rename files.",
+  "main": "index.js",
+  "bin": {
+    "rename-pipeline": "cmd.js"
+  },
+  "dependencies": {
+    "glob-stream": "^4.0.0",
+    "escape-string-regexp": "^1.0.2",
+    "lodash.isfunction": "^2.4.1",
+    "lodash.isarray": "^2.4.1",
+    "lodash.isobject": "^2.4.1",
+    "lodash.isstring": "^2.4.1",
+    "moment": "^2.9.0",
+    "subarg": "^1.0.0",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.5",
+    "tape": "^3.4.0"
+  },
+  "scripts": {
+    "test": "tape test/**/*.js"
+  },
+  "keywords": [
+    "rename",
+    "transform"
+  ],
+  "author": {
+    "name": "Tane Morgan",
+    "url": "http://github.com/tanem"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tanem/rename-pipeline.git"
+  },
+  "homepage": "https://github.com/tanem/rename-pipeline"
+}
