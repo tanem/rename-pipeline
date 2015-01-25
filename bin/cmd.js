@@ -24,6 +24,7 @@ else transforms = [parseTransformOptions(argv.t)];
 var renamePipeline = require('..')();
 renamePipeline.files(argv._);
 transforms.forEach(renamePipeline.transform.bind(renamePipeline));
+if (argv.d) renamePipeline.dryRun(true);
 renamePipeline.run();
 
 function parseTransformOptions(t) {
