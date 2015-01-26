@@ -1,3 +1,7 @@
+## v1.2.4 / 2015-01-26
+
+ * ([bde518b](https://github.com/tanem/rename-pipeline/commit/bde518b290102af2d90e896adf5e2674cdc78709)) Fix bin path
+
 ## v1.2.3 / 2015-01-26
 
  * ([124ec6a](https://github.com/tanem/rename-pipeline/commit/124ec6ac3fe55087a5f8f8f1d752e2e4d0c9848e)) Correct badge link in README
