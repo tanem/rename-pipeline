@@ -1,3 +1,7 @@
+## v1.2.2 / 2015-01-26
+
+ * ([b4c34ba](https://github.com/tanem/rename-pipeline/commit/b4c34ba123da52e42495d8a579e611e558125589)) Add contenthash transform test for custom options
+
 ## v1.2.1 / 2015-01-26
 
  * ([9179b2b](https://github.com/tanem/rename-pipeline/commit/9179b2b8c015c67451bfdc1e4eac5b9ffa8e7085)) Fix failing tests
