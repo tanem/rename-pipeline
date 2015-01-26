@@ -4,7 +4,7 @@
   "description": "Apply transforms to rename files.",
   "main": "index.js",
   "bin": {
-    "rename-pipeline": "cmd.js"
+    "rename-pipeline": "./bin/cmd.js"
   },
   "dependencies": {
     "glob-stream": "^4.0.0",
