@@ -100,6 +100,56 @@ If true, the result of the rename transforms will be printed to stdout, but no a
 
 Run the transform pipeline, executing the optional done callback when complete.
 
+## Transforms
+
+There are a few built-in transforms, but the intention is for these to become separate modules that aren't included in this repo.
+
+### contenthash
+
+Append a hash of the file contents:
+
+```
+/lib/normalise.js -> /lib/normalise.f93e7a76.js
+```
+
+### gitshorthash
+
+Append the git short version hash of `HEAD`:
+
+```
+/lib/normalise.js -> /lib/normalise.61949eb.js
+```
+
+### timestamp
+
+Append the timestamp (uses [moment](http://momentjs.com/) and defaults to 'YYYYMMDD-HHmm'):
+
+```
+/lib/normalise.js -> /lib/normalise.20150126-1214.js
+```
+
+### cssimgrename
+
+Rename images within css files, based on the current file's new basename.
+
+For a file that is being renamed to `pic.12345.jpg`, the following CSS:
+
+```css
+body {
+  background: url("./pic.jpg");
+  color: green;
+}
+```
+
+Will be transformed to:
+
+```css
+body {
+  background: url("./pic.12345.jpg");
+  color: green;
+}
+```
+
 ## Tests
 
 ```
