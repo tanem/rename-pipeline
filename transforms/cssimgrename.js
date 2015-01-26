@@ -4,14 +4,6 @@ var gs = require('glob-stream');
 var fs = require('fs');
 var escape = require('escape-string-regexp');
 
-// mover test/ -p [renamer -s foo/]
-// $ browserify -t [ foo --bar=555 ] main.js
-// b.transform('foo', { bar: 555 })
-// module.exports = function (file, opts) { /* opts.bar === 555 */ }
-// options.glob
-
-// options.s for source files
-// note this only replaces basenames! not folder.
 module.exports = function(options){
   return through.obj(function(chunk, encoding, callback){
 
