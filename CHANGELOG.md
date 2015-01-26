@@ -1,3 +1,9 @@
+## v1.0.4 / 2015-01-26
+
+ * ([1b3a8c8](https://github.com/tanem/rename-pipeline/commit/1b3a8c8892724e244aeb660d7c5fea9a206e9acb)) Add basic transform info to README
+ * ([4e15d58](https://github.com/tanem/rename-pipeline/commit/4e15d5890a3327f57b7384790a2106c28562919b)) Decruft
+ * ([61949eb](https://github.com/tanem/rename-pipeline/commit/61949eb4214354c07ec8f85deae752f76b02fd4c)) Add dryRun info to README
+
 ## v1.0.3 / 2015-01-26
 
  * ([6c2bb07](https://github.com/tanem/rename-pipeline/commit/6c2bb07146a4aba33f0e02c38fb344eab2b9ab01)) Add dryRun option via command-line
@@ -14,3 +20,4 @@
 ## v1.0.0 / 2015-01-26
 
  * ([1262ebe](https://github.com/tanem/rename-pipeline/commit/1262ebee88bde20248ec12323fd5834cc89ead06)) Initialised
+
