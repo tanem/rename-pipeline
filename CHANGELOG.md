@@ -1,3 +1,7 @@
+## v1.2.0 / 2015-01-26
+
+ * ([df1c201](https://github.com/tanem/rename-pipeline/commit/df1c2013f29ba51f1991d69aed4943a01191df0b)) Add format option to timestamp transform
+
 ## v1.1.0 / 2015-01-26
 
  * ([cde0b57](https://github.com/tanem/rename-pipeline/commit/cde0b576fcee308791caebec8d583f1cfd386cd8)) Add algorithm and encoding options to contenthash transform
