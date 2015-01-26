@@ -1,7 +1,7 @@
 # rename-pipeline
 
 [![Build Status](https://travis-ci.org/tanem/rename-pipeline.png?branch=master)](https://travis-ci.org/tanem/rename-pipeline)
-[![NPM version](https://badge.fury.io/js/rename-pipeline.svg)](http://badge.fury.io/js/mkclog)
+[![NPM version](https://badge.fury.io/js/rename-pipeline.svg)](http://badge.fury.io/js/rename-pipeline)
 
 Apply transforms to rename files.
 
