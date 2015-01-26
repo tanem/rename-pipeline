@@ -1,3 +1,7 @@
+## v1.2.3 / 2015-01-26
+
+ * ([124ec6a](https://github.com/tanem/rename-pipeline/commit/124ec6ac3fe55087a5f8f8f1d752e2e4d0c9848e)) Correct badge link in README
+
 ## v1.2.2 / 2015-01-26
 
  * ([b4c34ba](https://github.com/tanem/rename-pipeline/commit/b4c34ba123da52e42495d8a579e611e558125589)) Add contenthash transform test for custom options
