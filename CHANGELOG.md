@@ -1,3 +1,8 @@
+## v1.0.5 / 2015-01-26
+
+ * ([1f199af](https://github.com/tanem/rename-pipeline/commit/1f199af317ab7a874db47137a6e20674add89982)) Remove unneeded deps
+ * ([898f2de](https://github.com/tanem/rename-pipeline/commit/898f2de0717b34eb877dd09ba4109944d819f333)) Tweak README
+
 ## v1.0.4 / 2015-01-26
 
  * ([1b3a8c8](https://github.com/tanem/rename-pipeline/commit/1b3a8c8892724e244aeb660d7c5fea9a206e9acb)) Add basic transform info to README
@@ -20,4 +25,3 @@
 ## v1.0.0 / 2015-01-26
 
  * ([1262ebe](https://github.com/tanem/rename-pipeline/commit/1262ebee88bde20248ec12323fd5834cc89ead06)) Initialised
-
