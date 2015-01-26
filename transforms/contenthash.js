@@ -3,17 +3,20 @@ var crypto = require('crypto');
 var fs = require('fs');
 var path = require('path');
 
-module.exports = function(){
+module.exports = function(options){
   return through.obj(function(chunk, encoding, callback){
 
-    var hash = crypto.createHash('md5');
+    var algorithm = options.a || options.algorithm || 'md5';
+    var encoding = options.e || options.encoding || 'hex';
+    
+    var hash = crypto.createHash(algorithm);
     var workingPath = chunk.newPath || chunk.oldPath;
     var dirname = path.dirname(workingPath);
     var extname = path.extname(workingPath);
     var basename = path.basename(workingPath, extname);
     var rs = fs.createReadStream(workingPath);
 
-    hash.setEncoding('hex');
+    hash.setEncoding(encoding);
 
     rs.on('end', function(){
       hash.end();

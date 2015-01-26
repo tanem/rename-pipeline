@@ -112,6 +112,24 @@ Append a hash of the file contents:
 /lib/normalise.js -> /lib/normalise.f93e7a76.js
 ```
 
+The hash algorithm defaults to `md5`. The hash encoding defaults to `hex`. These can be changed via the command-line:
+
+```
+$ rename-pipeline ./src/*.js -t [ contenthash -a sha1 -e hex ]
+```
+
+Or via the API:
+
+```js
+r.transform({
+  name: 'contenthash',
+  options: {
+    algorithm: 'sha1',
+    encoding: 'hex'
+  }
+});
+```
+
 ### gitshorthash
 
 Append the git short version hash of `HEAD`:
