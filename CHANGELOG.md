@@ -1,3 +1,7 @@
+## v1.2.1 / 2015-01-26
+
+ * ([9179b2b](https://github.com/tanem/rename-pipeline/commit/9179b2b8c015c67451bfdc1e4eac5b9ffa8e7085)) Fix failing tests
+
 ## v1.2.0 / 2015-01-26
 
  * ([df1c201](https://github.com/tanem/rename-pipeline/commit/df1c2013f29ba51f1991d69aed4943a01191df0b)) Add format option to timestamp transform
