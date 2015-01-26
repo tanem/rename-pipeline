@@ -28,7 +28,7 @@ if (argv.d) renamePipeline.dryRun(true);
 renamePipeline.run();
 
 function parseTransformOptions(t) {
-  if (isString(t)) return { name: t , options: {} };
+  if (isString(t)) return { name: t };
   if (isObject(t)) {
     var name = t._[0];
     delete t._;

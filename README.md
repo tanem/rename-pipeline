@@ -146,6 +146,23 @@ Append the timestamp (uses [moment](http://momentjs.com/) and defaults to `YYYYM
 /lib/normalise.js -> /lib/normalise.20150126-1214.js
 ```
 
+The date format can be changed via the command-line:
+
+```
+$ rename-pipeline ./src/*.js -t [ timestamp -f YYYY ]
+```
+
+Or via the API:
+
+```js
+r.transform({
+  name: 'timestamp',
+  options: {
+    format: 'YYYY'
+  }
+});
+```
+
 ### cssimgrename
 
 Rename images within css files, based on the current file's new basename.

@@ -4,8 +4,9 @@ var path = require('path');
 
 module.exports = function(options){
   return through.obj(function(obj, enc, cb){
-    options || (options = {});
-    var formatString = options.formatString || 'YYYYMMDD-HHmm';
+    
+    var format = options.f || options.format || 'YYYYMMDD-HHmm';
+
     var workingPath = obj.newPath || obj.oldPath;
     var dirname = path.dirname(workingPath);
     var extname = path.extname(workingPath);
@@ -15,7 +16,7 @@ module.exports = function(options){
       oldPath: obj.oldPath,
       newPath: path.join(
         dirname,
-        basename + '.' + moment().format(formatString) + extname
+        basename + '.' + moment().format(format) + extname
       )
     });
 
