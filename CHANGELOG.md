@@ -1,3 +1,7 @@
+## v1.1.0 / 2015-01-26
+
+ * ([cde0b57](https://github.com/tanem/rename-pipeline/commit/cde0b576fcee308791caebec8d583f1cfd386cd8)) Add algorithm and encoding options to contenthash transform
+
 ## v1.0.6 / 2015-01-26
 
  * ([365db7f](https://github.com/tanem/rename-pipeline/commit/365db7fea40e2d1252d2170bf8c42238afd2872e)) Tweak README
