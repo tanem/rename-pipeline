@@ -7,6 +7,8 @@ var escape = require('escape-string-regexp');
 module.exports = function(options){
   return through.obj(function(chunk, encoding, callback){
 
+    options || (options = {});
+    
     var self = this;
     var oldBasename = getBasename(chunk.oldPath);
     var newBasename = getBasename(chunk.newPath);

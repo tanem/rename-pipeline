@@ -42,7 +42,7 @@ RenamePipeline.prototype.run = function(done){
   this._transforms
     .map(function(t){
       if (isFunction(t)) return t();
-      return require(path.join(__dirname, 'transforms', t.name))(t.options || {});
+      return require(path.join(__dirname, 'transforms', t.name))(t.options);
     })
     .forEach(function(t){
       stream = stream.pipe(t);

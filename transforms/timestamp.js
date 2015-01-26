@@ -5,6 +5,8 @@ var path = require('path');
 module.exports = function(options){
   return through.obj(function(obj, enc, cb){
     
+    options || (options = {});
+    
     var format = options.f || options.format || 'YYYYMMDD-HHmm';
 
     var workingPath = obj.newPath || obj.oldPath;

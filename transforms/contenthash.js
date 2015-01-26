@@ -6,9 +6,11 @@ var path = require('path');
 module.exports = function(options){
   return through.obj(function(chunk, encoding, callback){
 
+    options || (options = {});
+    
     var algorithm = options.a || options.algorithm || 'md5';
     var encoding = options.e || options.encoding || 'hex';
-    
+
     var hash = crypto.createHash(algorithm);
     var workingPath = chunk.newPath || chunk.oldPath;
     var dirname = path.dirname(workingPath);

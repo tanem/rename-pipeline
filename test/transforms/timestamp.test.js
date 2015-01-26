@@ -35,7 +35,7 @@ test('should append a custom timestamp to the filename', function(t){
   var rs = new Readable({ objectMode: true });
   rs.push({ oldPath: filePath, newPath: '' });
   rs.push(null);
-  rs.pipe(timestamp({ formatString: 'HHmm'}))
+  rs.pipe(timestamp({ format: 'HHmm'}))
     .pipe(through.obj(function(chunk, encoding, callback){
       t.deepEqual(chunk, {
         oldPath: filePath,
