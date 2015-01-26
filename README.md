@@ -122,7 +122,7 @@ Append the git short version hash of `HEAD`:
 
 ### timestamp
 
-Append the timestamp (uses [moment](http://momentjs.com/) and defaults to 'YYYYMMDD-HHmm'):
+Append the timestamp (uses [moment](http://momentjs.com/) and defaults to `YYYYMMDD-HHmm`):
 
 ```
 /lib/normalise.js -> /lib/normalise.20150126-1214.js
