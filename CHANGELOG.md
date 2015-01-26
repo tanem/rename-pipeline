@@ -1,3 +1,7 @@
+## v1.0.6 / 2015-01-26
+
+ * ([365db7f](https://github.com/tanem/rename-pipeline/commit/365db7fea40e2d1252d2170bf8c42238afd2872e)) Tweak README
+
 ## v1.0.5 / 2015-01-26
 
  * ([1f199af](https://github.com/tanem/rename-pipeline/commit/1f199af317ab7a874db47137a6e20674add89982)) Remove unneeded deps
