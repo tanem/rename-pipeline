@@ -36,7 +36,7 @@ Passing arguments to transforms:
 $ npm install -g rename-pipeline
 ```
 
-## Example
+## Examples
 
 [Globs](https://github.com/isaacs/node-glob#glob-primer) can be used to denote source files:
 
