@@ -40,7 +40,7 @@ module.exports = function(options){
         var filePath = chunk.path;
         fs.readFile(filePath, { encoding: 'utf-8' }, function(err, data){
           if (err) throw err;
-          var regex = new RegExp('(url\\(.*?\/)' + escape(oldBasename) + '(\\..+?\\))', 'g');
+          var regex = new RegExp('(url\\(.*?)' + escape(oldBasename) + '(\\..+?\\))', 'g');
           data = data.replace(regex, '$1' + newBasename + '$2');
           fs.writeFile(filePath, data, function(err){
             if (err) throw err;
