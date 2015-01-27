@@ -1,3 +1,7 @@
+## v1.2.5 / 2015-01-27
+
+ * ([30e35bf](https://github.com/tanem/rename-pipeline/commit/30e35bf6ca8045f8a10438fca436ef4a2b73f794)) Tweak cssimgrename regex
+
 ## v1.2.4 / 2015-01-26
 
  * ([bde518b](https://github.com/tanem/rename-pipeline/commit/bde518b290102af2d90e896adf5e2674cdc78709)) Fix bin path
